@@ -9,9 +9,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
+import './Navbar.css'
 
 
-
+ 
 const Navbar = () => {
     const [state, setState] = React.useState({
         isOpen: false                          //state that determines if drawer is open
@@ -48,9 +49,9 @@ const Navbar = () => {
                     }}>
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant='h6'>Teach</Typography>
+                    <Typography variant='h6'><div className='title'>Don't Panic</div></Typography>
                     <SwipeableDrawer
-                        anchor='right'
+                        anchor='top'
                         open={state.isOpen}
                         onOpen={toggleDrawer}
                         onClose={toggleDrawer}>{navList()}</SwipeableDrawer>
