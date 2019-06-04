@@ -21,7 +21,7 @@ const ChemWelcome = () => {
         console.log(state.isOpen)
     }
 
-    const resetDrawer = () => {
+    const resetDrawer = () => {           //If user clicks anywhere other than a link, drawer closes
         if (state.isOpen) toggleDrawer()
     }
 
