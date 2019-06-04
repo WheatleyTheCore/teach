@@ -5,8 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
-import NavList from './Navlist';
 import './Navbar.css';
+import Linkify from '../Utilities/Linkify';
 
 
  
@@ -18,6 +18,8 @@ const Navbar = () => {
         setState({ isOpen: !state.isOpen })
         console.log(state.isOpen)
     }
+
+    let list = ['Chemistry', 'Latin', 'Math']
 
     return (
         <div>
@@ -33,7 +35,7 @@ const Navbar = () => {
                         anchor='left'
                         open={state.isOpen}
                         onOpen={toggleDrawer}
-                        onClose={toggleDrawer}>{NavList()}</SwipeableDrawer>
+                        onClose={toggleDrawer}>{Linkify(list)}</SwipeableDrawer>
                 </Toolbar>
             </AppBar>
         </div>
