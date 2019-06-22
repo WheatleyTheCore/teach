@@ -1,5 +1,7 @@
 {
-    "lessons": {
-        "0": "Gas Laws"
-    }
+    "lessons": [
+        "Gas Laws",
+        "Thermochemical Equations",
+        "Electronegativity"
+    ]
 }
