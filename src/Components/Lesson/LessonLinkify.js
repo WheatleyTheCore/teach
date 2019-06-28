@@ -9,13 +9,13 @@ import ListItemText from '@material-ui/core/ListItemText'
 import Link from 'react-router-dom/Link'
 
 
-const LessonLinkify = (list) => {                  //creates list of router links
+const LessonLinkify = (list, modifiedList) => {                  //creates list of router links
     return (
         <div>
             <List>
                 {
-                    list.map((text) => (  //iterates over array of link names to make a list of links
-                        <Link to={'/lesson' + text} className='button'>
+                    list.map((text, index) => (  //iterates over array of link names to make a list of links
+                        <Link to={'/lesson' + modifiedList[index]} className='button'>
                             <ListItem button key={text}>
                                 <ListItemText primary={text} />
                             </ListItem>
