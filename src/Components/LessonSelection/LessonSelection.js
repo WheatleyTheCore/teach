@@ -14,7 +14,7 @@ const LessonSelection = (props) => {
                     <SwipeableDrawer
                         anchor='bottom'
                         open={props.isOpen} //Here, we pass in wether or not the component is open as a prop. The prop passed in will be the isOpen state in the parent component, and so any change should trigger a rerender.
-                    >{LessonLinkify(props.list, modifiedList)}</SwipeableDrawer>
+                    >{LessonLinkify(props.list, modifiedList, props.course)}</SwipeableDrawer>
         </div>
     )
 }

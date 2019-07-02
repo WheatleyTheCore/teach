@@ -1,6 +1,6 @@
 import React from 'react'
 import WelcomeCard from '../../../Components/WelcomeCard/WelcomeCard'
-let manifest = require('../ChemMainifest.json')
+let manifest = require('../manifest.json')
 /*
  * A welcome for the chemistry section.
  */
