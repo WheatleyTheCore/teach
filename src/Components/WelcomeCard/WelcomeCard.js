@@ -28,7 +28,6 @@ import LessonSelection from '../LessonSelection/LessonSelection';
     }	
 
     let course = props.match.params.course
-    let lesson = props.match.params.lesson 
 
     let manifest = require(`../../Courses/${course}/manifest.json`)
 
